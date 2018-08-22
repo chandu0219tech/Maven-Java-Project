@@ -31,19 +31,7 @@
         <sonar.groovy.binaries>target/classes</sonar.groovy.binaries>
   </properties>
 
-    <scm>
-        <connection>scm:git:https://github.com/devopstrainingblr/Maven-Java-Project</connection>
-        <developerConnection>scm:git:https://github.com/devopstrainingblr/Maven-Java-Project</developerConnection>
-        <tag>HEAD</tag>
-        <url>https://github.com/devopstrainingblr/Maven-Java-Project</url>
-    </scm>
-	
-    <issueManagement>
-        <system>GitHub
-	    </system>
-        <url>https://github.com/devopstrainingblr/Maven-Java-Project/issues</url>
-    </issueManagement>
-	
+    	
 	
   <dependencies>
     <dependency>
@@ -98,6 +86,19 @@
 		</dependency>
   </dependencies>
 
+	<distributionManagement>
+	  <repository>
+	          <id>central</id>
+	          <name>Bhaskars-MacBook-Air.local-releases</name>
+	          <url>http://localhost:8085/chandutechno/repository/flipkart-releases/</url>
+	      </repository>
+      <snapshotRepository>
+          <id>snapshots</id>
+          <name>Bhaskars-MacBook-Air.local-snapshots</name>
+          <url>http://localhost:8085/chandutechno/repository/flipkart-snapshot/</url>
+      </snapshotRepository>
+  </distributionManagement>
+	
    <profiles>
         <profile>
             <id>sonar</id>

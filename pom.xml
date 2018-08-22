@@ -88,12 +88,12 @@
 
 	<distributionManagement>
 	  <repository>
-	          <id>central</id>
+	          <id>nexus</id>
 	          <name>Bhaskars-MacBook-Air.local-releases</name>
 	          <url>http://localhost:8085/chandutechno/repository/flipkart-releases/</url>
 	      </repository>
       <snapshotRepository>
-          <id>snapshots</id>
+          <id>nexus</id>
           <name>Bhaskars-MacBook-Air.local-snapshots</name>
           <url>http://localhost:8085/chandutechno/repository/flipkart-snapshot/</url>
       </snapshotRepository>
